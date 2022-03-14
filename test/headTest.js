@@ -2,8 +2,6 @@ const assert = require('chai').assert;
 const assertEqual = require('../assertEqual');
 const head = require('../head');
 
-//assertEqual(head([5,6,7]), 5);
-//assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 describe("#head", () => {
   it("returns 1 for [1, 2, 3]", () => {
