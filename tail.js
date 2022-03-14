@@ -1,13 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${[actual]} equals ${[expected]}`);
-  }
-  if (actual !== expected) {
-    console.log(
-      `🛑🛑🛑 Assertion Failed: ${[actual]} does not equal ${[expected]}`
-    );
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const tail = function(bar) {
   let result = [];
@@ -17,7 +8,6 @@ const tail = function(bar) {
   return result;
 };
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+
+
+module.exports = tail;

@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-
-    if(actual===expected) {
-        console.log(`assertion passed: ${actual} does equal ${expected}`);
-    } else {
-        console.log(`assertion failed: ${actual} does not equal ${expected}`);
-    }
-
-};
+const assertEqual = require('./assertEqual');
 
 const eqArrays=function(ar1,ar2) {
     if(ar1.length!==ar2.length) {
@@ -22,3 +14,5 @@ const eqArrays=function(ar1,ar2) {
     return true;
 
 }
+
+module.exports = eqArrays;
